@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/ville/Downloads/Monogame-Objektorientering-main/Monogame-Objektorientering-main/Monogame_example1-main/Content/box.png","C:/Users/ville/Downloads/Monogame-Objektorientering-main/Monogame-Objektorientering-main/Monogame_example1-main/Content/bin/Windows/box.xnb","TextureProcessor","Texture2DContent",331,10085,0,3604857
+"C:/Users/ville/Downloads/Monogame-Objektorientering-main/Monogame-Objektorientering-main/Monogame_example1-main/Content/xwing.png","C:/Users/ville/Downloads/Monogame-Objektorientering-main/Monogame-Objektorientering-main/Monogame_example1-main/Content/bin/Windows/xwing.xnb","TextureProcessor","Texture2DContent",148628,869549,0,0291414
