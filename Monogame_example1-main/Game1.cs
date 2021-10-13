@@ -10,6 +10,7 @@ namespace monogameSprite
         private SpriteBatch _spriteBatch;
 
         Sprite player;
+        Sprite enemy;
 
         public Game1()
         {
@@ -20,7 +21,7 @@ namespace monogameSprite
 
         protected override void Initialize()
         {
-            player = new Sprite(Content.Load<Texture2D>("xwing"), new Vector2(150,250), new Rectangle(150, 250, 200, 200));
+            player = new Sprite(Content.Load<Texture2D>("box"), new Vector2(150,250), new Rectangle(150, 250, 200, 200));
 
             base.Initialize();
         }
@@ -37,6 +38,8 @@ namespace monogameSprite
                     Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            player.Move();
+
             base.Update(gameTime);
         }
 
@@ -45,7 +48,7 @@ namespace monogameSprite
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.Draw(player.Texture, player.BoundingBox, Color.White);
+            _spriteBatch.Draw(player.Texture, player.Position, Color.White);
             _spriteBatch.End();
 
             base.Draw(gameTime);
